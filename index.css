@@ -1,0 +1,950 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    height: 10vmin;
+    display: flex;
+    align-items: center;
+    background-color: yellow;
+    justify-content: space-between;
+    padding: 0 70px;
+    margin-bottom: 80px;
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 25%;
+}
+.nav-list li{
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.nav-list li .underline{
+    width: 0;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+}
+.nav-list li:hover .underline{
+    width: 100%;
+}
+nav i{
+    font-size: 30px;
+    cursor: pointer;
+}
+main{
+    position: relative;
+}
+#intro{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 100px 300px 100px;
+}
+#intro .image1{
+    width: 500px;
+    height: 400px;
+    background:url('images/kal-visuals-aK4iPNYipnU-unsplash.jpg');
+    background-size: cover;
+}
+#intro .info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#intro .info p{
+    width: 80%;
+    margin-bottom: 40px;
+    font-size: 20px;
+    color: gray;
+}
+#intro .info h1{
+    font-size: 80px;
+    width: 80%;
+    line-height: 70px;
+    margin-bottom: 40px;
+}
+#intro .info button{
+    padding: 8px 20px;
+    background-color: yellow;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+#intro .info button:hover{
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.4);
+    color: yellow;
+    background-color: black;
+}
+#section1{
+    background-color: rgb(239, 236, 236);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65vmin;
+    width: 90%;
+    padding: 50px 70px;
+    position: absolute;
+    top: 500px;
+    left: 80px;
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.4);
+}
+#section1 .left{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#section1 .left h1{
+    font-size: 60px;
+    margin-bottom: 30px;
+    color: rgb(255, 225, 0);
+    width: 110%;
+}
+#section1 .left p{
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+#section1 .left button{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-weight: 700;
+    font-size: 17px;
+    transition: all 0.3s ease;
+}
+#section1 .left button:hover{
+    opacity: 0.7;
+}
+#section1 .piechart1{
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.4);
+    background: conic-gradient(
+        red 90deg,
+        orange 0 110deg,
+        yellow 0 250deg,
+        rgb(75, 48, 1) 0
+    );
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+#section1 .piechart2{
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.4);
+    background: conic-gradient(
+        purple 90deg,
+        plum 0 110deg,
+        pink 0 250deg,
+        white 0
+    );
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+#section2{
+    display: flex;
+    flex-direction: column;
+    padding:300px 100px 100px 100px;
+    background-color: yellow;
+}
+#section2 .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#section2 .info .left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    margin: 0 10px;
+}
+#section2 .info .right{
+    width: 1300px;
+    height: 400px;
+    background:url('images/surface-S_YOuAUMm2o-unsplash.jpg');
+    background-size: cover;
+}
+#section2 .info .left p{
+    font-size: 20px;
+    width: 50%;
+    margin-bottom: 70px;
+    margin-top: -80px;
+}
+#section2 .info .left button{
+    padding:10px 25px ;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+#section2 .info .left button:hover{
+    background-color: rgb(255, 213, 0);
+    color: black;
+    border: 1px solid black;
+}
+#section2 h1{
+    font-size: 70px;
+    width: 55%;
+    line-height: 60px;
+}
+#section3{
+    width: 100%;
+    height: 90vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#section3 .info{
+    background-color: pink;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.4);
+}
+#section3 .info .left{
+    background:url('images/kawin-harasai-2Ev2aUB8NJI-unsplash.jpg');
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+}
+#section3 .info .right{
+    padding-top:40px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 50px;
+    position: relative;
+}
+#section3 .info .right h1{
+    font-size: 50px;
+    color: rgb(255, 136, 0);
+    margin-bottom: 20px;
+}
+#section3 .info .right p{
+    font-size: 20px;
+    width: 60%;
+    margin-bottom: 40px;
+}
+#section3 .info .right button{
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+}
+#section3 .info .right button:hover{
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.4);
+    color: black;
+    background-color: white;
+}
+#section3 .info .right .piechart{
+    width: 250px;
+    height: 250px;
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.4);
+    border-radius: 50%;
+    background:conic-gradient(
+        black 50deg,
+        orange 0 70deg,
+        yellow 0 200deg,
+        red 0 50deg
+    );
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+}
+#section4{
+    background-color: black;
+    height: 95vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+#section4 h1{
+    color: yellow;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+#section4 p{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    width: 60%;
+    margin-bottom: 20px;
+}
+#section4 .image4{
+    height: 400px;
+    width: 700px;
+    background:url('images/surface-X1GZqv-F7Tw-unsplash.jpg');
+    background-size: cover;
+    margin-bottom: 20px;
+}
+#section4 button{
+    padding: 10px 30px;
+    background-color: yellow;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#section4 button:hover{
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.4);
+    color: yellow;
+    background-color: black;
+    border: 1px solid yellow;
+}
+#section5{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 100px;
+    width: 100%;
+}
+#section5 .left{
+    width: 100%;
+    height: 500px;
+    background:url('images/tim-mossholder-8R-mXppeakM-unsplash.jpg');
+    background-size: cover;
+}
+#section5 .right{
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+#section5 .right h1{
+    margin-bottom: 40px;
+    font-size: 60px;
+}
+#section5 .right p{
+    font-size: 20px;
+    width: 40%;
+    margin-bottom: 50px;
+}
+#section5 .right button{
+    padding: 10px 30px;
+    background-color: yellow;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#section5 .right button:hover{
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.4);
+    color: yellow;
+    background-color: black;
+}
+#section6{
+    background-color: rgb(197, 194, 194);
+    height: 80vmin;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+#section6 .left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width:40% ;
+}
+#section6 .right{
+    width: 600px;
+    background:url('images/zac-durant-_6HzPU9Hyfg-unsplash.jpg');
+    background-size: cover;
+    height: 80%;
+}
+#section6 .left h1{
+    font-size: 60px;
+    width: 120%;
+    margin-bottom: 40px;
+}
+#section6 .left p{
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+#section6 .left button{
+    padding: 10px 30px;
+    background-color: yellow;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#section6 .left button:hover{
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.4);
+    color: yellow;
+    background-color: black;
+}
+#newsletter{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 70px 100px;
+    align-items: center;
+}
+#newsletter form{
+    background-color: black;
+    color: white;
+    height: 70vmin;
+    width: 80vmin;
+    padding: 50px 40px;
+    line-height: 25px;
+}
+#newsletter form input{
+    height: 25px;
+}
+#newsletter .right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 45%;
+    margin-right: 100px;
+}
+#newsletter .right h1{
+    font-size: 70px;
+    color: yellow;
+    width: 115%;
+    margin-bottom: 30px;
+}
+#newsletter .right p{
+    font-size: 20px;
+    margin-bottom: 50px;
+    width: 80%;
+}
+#newsletter .right button{
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+}
+#newsletter .right button:hover{
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.4);
+    background-color: red;
+}
+#newsletter form .name{
+    display: flex;
+}
+#email,#pass{
+    width: 100%;
+}
+#newsletter form textarea{
+    width: 100%;
+    height: 100px;
+    resize: none;
+    margin-bottom: 10px;
+}
+#fname,#lname{
+    width: 212px;
+}
+#fname{
+    margin-right: 50px;
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: yellow;
+    padding: 50px;
+}
+#contact h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+#contact p{
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+#contact button{
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+}
+#contact button:hover{
+    background-color:green;
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.4);
+}
+footer{
+    height: 70vmin;
+    background-color: black;
+    padding: 50px;
+}
+footer .smiley{
+    color: white;
+    font-size: 80px;
+    margin-bottom: 50px;
+}
+footer .lists{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    margin-bottom: 130px;
+}
+footer .lists ul{
+    list-style: none;
+    line-height: 25px;
+}
+footer .lists ul li{
+    color: yellow;
+    font-size: 20px;
+    cursor: pointer;
+}
+footer .lists ul li:hover{
+    opacity: 0.7;
+}
+footer .copyright{
+    margin:25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .copyright p{
+    color: yellow;
+    font-size: 17px;
+}
+footer .copyright .socials i{
+    color: yellow;
+    margin:0 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+footer .copyright .socials i:hover{
+    opacity: 0.7;
+}
+
+@media (max-width:799px) {
+    nav{
+        padding: 0 50px;
+    }
+    .nav-list{
+        width: 50%;
+    }
+    #intro{
+        padding:0 50px 100px 50px;
+    }
+    #intro .image1{
+        width: 400px;
+        height: 300px;
+    }
+    #intro .info p{
+        width: 100%;
+        margin-bottom: 30px;
+        font-size: 15px;
+    }
+    #intro .info h1{
+        font-size: 50px;
+        width: 100%;
+        line-height: 50px;
+        margin-bottom: 30px;
+    }
+    #section1{
+        height: 40vmin;
+        width: 90%;
+        padding: 30px 50px;
+        top: 350px;
+        left: 40px;
+    }
+    #section1 .left{
+        width: 50%;
+    }
+    #section1 .left h1{
+        font-size: 40px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    #section1 .left p{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    #section1 .left button{
+        font-size: 13px;
+    }
+    #section1 .piechart1{
+        width: 150px;
+        height: 150px;
+    }
+    #section1 .piechart2{
+        width: 150px;
+        height: 150px;
+    }
+    #section2{
+        padding:300px 50px 100px 50px;
+    }
+    #section2 .info .left{
+        width: 100%;
+        margin: 0 10px;
+    }
+    #section2 .info .right{
+        width: 1000px;
+        height: 400px;
+    }
+    #section2 .info .left p{
+        font-size: 15px;
+        width: 100%;
+        margin-bottom: 50px;
+        margin-top: -40px;
+    }
+    #section2 h1{
+        font-size: 40px;
+        width: 100%;
+    }
+    #section3 .info{
+        height: 70%;
+    }
+    #section3 .info .right{
+        padding-top:20px;
+        padding-left: 20px;
+    }
+    #section3 .info .right h1{
+        font-size: 30px;
+    }
+    #section3 .info .right p{
+        font-size: 15px;
+        width: 80%;
+    }
+    #section3 .info .right .piechart{
+        width: 150px;
+        height: 150px;
+        right: 20px;
+    }
+    #section4{
+        height: 90vmin;
+        padding: 30px 0;
+    }
+    #section4 h1{
+        font-size: 30px
+    }
+    #section4 p{
+        font-size: 15px;
+        width: 80%;
+    }
+    #section5{
+        padding: 50px 30px;
+    }
+    #section5 .right{
+        padding-left: 40px;
+    }
+    #section5 .right h1{
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+    #section5 .right p{
+        font-size: 15px;
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    #section6{
+        padding: 0 20px;
+    }
+    #section6 .left{
+        width:50% ;
+    }
+    #section6 .left h1{
+        font-size: 40px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #section6 .left p{
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+    #newsletter{
+        padding: 50px 10px;
+    }
+    #newsletter form{
+        height: 60vmin;
+        width: 70vmin;
+        padding: 30px 20px;
+        line-height: 15px;
+    }
+    #newsletter form input{
+        height: 20px;
+    }
+    #newsletter .right{
+        width: 50%;
+        margin-left: 10px;
+    }
+    #newsletter .right h1{
+        font-size: 40px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #newsletter .right p{
+        font-size: 15px;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    #fname,#lname{
+        width: 200px;
+    }
+    #fname{
+        margin-right: 20px;
+    }
+    #contact{
+        padding: 20px;
+    }
+    #contact h1{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    #contact p{
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+    #contact iframe{
+        width: 700px;
+    }
+    footer{
+        height: 50vmin;
+        padding: 20px;
+    }
+    footer .smiley{
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+    footer .lists{
+        width: 40%;
+        margin-bottom: 50px;
+    }
+    footer .lists ul li{
+        font-size: 15px;
+    }
+    footer .copyright{
+        margin:25px;
+    }
+    footer .copyright p{
+        font-size: 15px;
+    }
+}
+@media (max-width:390px) {
+    nav{
+        padding: 0 2px;
+    }
+    .nav-list{
+        width: 70%;
+    }
+    #intro{
+        padding:0 20px 100px 20px;
+    }
+    #intro .image1{
+        width: 300px;
+        height: 200px;
+    }
+    #intro .info p{
+        margin-bottom: 10px;
+        font-size: 10px;
+    }
+    #intro .info h1{
+        font-size: 15px;
+        line-height: 15px;
+        margin-bottom: 10px;
+    }
+    #section1{
+        padding: 10px 20px;
+        top: 250px;
+        left: 20px;
+    }
+    #section1 .left h1{
+        font-size: 15px;
+    }
+    #section1 .left p{
+        font-size: 5px;
+    }
+    #section1 .left button{
+        font-size: 7px;
+    }
+    #section1 .piechart1{
+        width: 100px;
+        height: 100px;
+    }
+    #section1 .piechart2{
+        width: 100px;
+        height: 100px;
+    }
+    #section2{
+        padding:150px 20px 80px 20px;
+    }
+    #section2 .info .left{
+        margin: 0 3px;
+    }
+    #section2 .info .right{
+        width: 500px;
+        height: 300px;
+    }
+    #section2 .info .left p{
+        font-size: 10px;
+        margin-bottom: 30px;
+        margin-top: -30px;
+    }
+    #section2 h1{
+        font-size: 20px;
+    }
+    #section3 .info{
+        height: 80%;
+    }
+    #section3 .info .right{
+        padding-top:10px;
+        padding-left: 10px;
+    }
+    #section3 .info .right h1{
+        font-size: 20px;
+    }
+    #section3 .info .right p{
+        font-size: 10px;
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    #section3 .info .right button{
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+    #section3 .info .right .piechart{
+        width: 70px;
+        height: 70px;
+        right: 10px;
+        bottom: 20px;
+    }
+    #section4{
+        height: 80vmin;
+        padding: 20px 0;
+    }
+    #section4 h1{
+        font-size: 20px;
+    }
+    #section4 p{
+        font-size: 10px;
+        width: 100%;
+    }
+    #section4 .image4{
+        width: 300px;
+    }
+    #section5{
+        padding: 30px 10px;
+    }
+    #section5 .right{
+        padding-left: 10px;
+    }
+    #section5 .right h1{
+        font-size: 30px;
+    }
+    #section5 .right p{
+        font-size: 10px;
+        margin-bottom: 30px;
+    }
+    #section6{
+        padding: 0 5px;
+    }
+    #section6 .left{
+        width:50% ;
+    }
+    #section6 .left h1{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    #section6 .left p{
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    #newsletter{
+        padding: 30px 2px;
+    }
+    #newsletter form{
+        height: 50vmin;
+        width: 50vmin;
+        padding: 10px;
+        line-height: 14px;
+    }
+    #newsletter form input{
+        height: 15px;
+    }
+    #newsletter .right{
+        width: 50%;
+        margin-left: 5px;
+    }
+    #newsletter .right h1{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    #newsletter .right p{
+        font-size: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    #fname,#lname{
+        width: 70px;
+    }
+    #fname{
+        margin-right: 10px;
+    }
+    #newsletter form textarea{
+        height: 40px;
+        margin-bottom: 0;
+    }
+    #newsletter label{
+        font-size: 10px;
+    }
+    #newsletter form p{
+        font-size: 5px;
+        margin-top: 0;
+        line-height: 5px;
+    }
+    #contact{
+        padding: 10px;
+    }
+    #contact h1{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    #contact p{
+        margin-bottom: 20px;
+        font-size: 10px;
+    }
+    #contact iframe{
+        width: 300px;
+        height: 400px;
+    }
+    footer{
+        height: 50vmin;
+        padding: 10px;
+    }
+    footer .smiley{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    footer .lists{
+        width: 50%;
+        margin-bottom: 10px;
+    }
+    footer .lists ul li{
+        font-size: 13px;
+    }
+    footer .copyright{
+        margin:2px;
+    }
+    footer .copyright p{
+        font-size: 10px;
+    }
+    footer .copyright .socials i{
+        font-size: 12px;
+    }
+}
